@@ -5,11 +5,13 @@ const Schema = mongoose.Schema;
 const ExerciseSchema = new Schema({
   "type": {
     type: String,
-    required: true
+    required: true,
+    trim: true
   },
   "name": {
     type: String,
-    required: true
+    required: true,
+    trim: true
   },
   "duration": {
     type: Number,
